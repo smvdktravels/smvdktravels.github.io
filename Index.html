@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SMVDK Travels - Best Tour and Travels in Katra | Kashmir, Ladakh, Himachal Packages</title>
+<meta name="description" content="SMVDK Travels Katra - Experience Magic of North India. Vaishno Devi, Kashmir, Ladakh, Himachal, Uttarakhand, Rajasthan Packages. Train, Bus, Cab Booking. Call 8493814143">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:#FFFFFF;color:#111827;line-height:1.6}
+h1,h2,h3{font-family:'Outfit',sans-serif;font-weight:800;color:#000}
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+.header{position:sticky;top:0;background:rgba(255,255,255,0.98);backdrop-filter:blur(12px);border-bottom:1px solid #E5E7EB;z-index:100;padding:12px 0}
+.header-flex{display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:26px;font-weight:900;color:#000;letter-spacing:-0.02em}
+.logo span{color:#FF6B00}
+.phone-btn{background:#FF6B00;color:white;padding:10px 22px;border-radius:999px;font-weight:700;text-decoration:none}
+.hero{padding:70px 0 50px;text-align:center;background:#FFFBF7}
+.badge{display:inline-block;background:#FFF7ED;border:1px solid #FDBA74;color:#9A3412;padding:6px 16px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:0.06em;margin-bottom:18px}
+.hero h1{font-size:58px;line-height:0.95;letter-spacing:-0.03em;margin-bottom:16px}
+.hero h1 .gold{background:linear-gradient(135deg,#FF6B00,#FFD700);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{font-size:18px;color:#374151;max-width:780px;margin:0 auto 10px;font-weight:500}
+.hero-sub{font-size:14px;color:#6B7280;max-width:700px;margin:0 auto}
+.flagship{background:#0A1931;color:white;padding:60px 0;position:relative;overflow:hidden}
+.flagship h2{color:white;font-size:38px;text-align:center;margin-bottom:10px}
+.flagship p{color:#9CA3AF;text-align:center;max-width:700px;margin:0 auto 30px}
+.timeline{display:flex;gap:12px;overflow-x:auto;padding:20px 0;scrollbar-width:none}
+.timeline::-webkit-scrollbar{display:none}
+.timeline-day{min-width:160px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:16px;text-align:center;cursor:pointer;transition:all 0.3s}
+.timeline-day:hover{background:rgba(255,107,0,0.15);border-color:#FF6B00}
+.timeline-day.active{background:#FF6B00;border-color:#FF6B00}
+.timeline-day .day-num{font-size:12px;color:#9CA3AF;margin-bottom:4px}
+.timeline-day .day-place{font-weight:700;font-size:14px;color:white}
+.vibe{padding:60px 0;background:white}
+.section-title{font-size:36px;text-align:center;margin-bottom:8px}
+.section-sub{text-align:center;color:#6B7280;margin-bottom:36px;font-size:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px}
+.package-card{background:white;border:1px solid #E5E7EB;border-radius:20px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.06);cursor:pointer;transition:all 0.3s}
+.package-card:hover{transform:translateY(-6px);box-shadow:0 16px 40px rgba(0,0,0,0.12);border-color:#FF6B00}
+.package-img{height:200px;position:relative;overflow:hidden;background:#F3F4F6}
+.package-img img{width:100%;height:100%;object-fit:cover}
+.package-img .overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.7),transparent)}
+.package-img .badge-top{position:absolute;top:12px;left:12px;background:#FF6B00;color:white;padding:4px 12px;border-radius:999px;font-size:11px;font-weight:700}
+.package-img .days{position:absolute;bottom:12px;left:12px;color:white;font-weight:700;font-size:14px;text-shadow:0 2px 8px rgba(0,0,0,0.5)}
+.package-content{padding:20px}
+.package-content h3{font-size:18px;margin-bottom:8px;line-height:1.3}
+.package-desc{font-size:14px;color:#4B5563;margin-bottom:14px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.package-price{display:flex;align-items:center;gap:8px;margin-bottom:14px}
+.price-new{font-size:22px;font-weight:800;color:#FF6B00}
+.price-old{font-size:14px;color:#9CA3AF;text-decoration:line-through}
+.btn-row{display:flex;gap:10px}
+.btn{flex:1;padding:12px;border-radius:12px;font-weight:700;font-size:14px;text-align:center;cursor:pointer;border:none;text-decoration:none;display:inline-block}
+.btn-outline{background:white;border:1px solid #E5E7EB;color:#111827}
+.btn-primary{background:#FF6B00;color:white}
+.portals{padding:50px 0;background:#F9FAFB;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.portal-card{background:white;border:2px solid;border-radius:20px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.06)}
+.portal-card.train{border-color:#BFDBFE}
+.portal-card.bus{border-color:#BBF7D0}
+.portal-card.cab{border-color:#FDBA74}
+.top-dest{padding:50px 0}
+.dest-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px}
+.dest-card{position:relative;height:220px;border-radius:16px;overflow:hidden;cursor:pointer}
+.dest-card img{width:100%;height:100%;object-fit:cover}
+.dest-card .dest-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.8),transparent)}
+.dest-card .dest-name{position:absolute;bottom:12px;left:12px;color:white;font-weight:700;font-size:16px}
+.activities{padding:50px 0;background:#F9FAFB}
+.act-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px}
+.act-card{background:white;border:1px solid #E5E7EB;border-radius:16px;padding:20px;text-align:center;transition:all 0.3s}
+.act-card:hover{border-color:#FF6B00;transform:translateY(-2px)}
+.act-card .act-icon{font-size:32px;margin-bottom:8px}
+.act-card h4{font-size:15px;margin-bottom:4px}
+.act-card p{font-size:12px;color:#6B7280}
+.why{padding:60px 0}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.why-card{background:white;border:1px solid #E5E7EB;border-radius:16px;padding:24px;text-align:center}
+.why-card .icon{font-size:36px;margin-bottom:12px}
+.faq{padding:50px 0;background:#F9FAFB}
+.faq-item{background:white;border:1px solid #E5E7EB;border-radius:12px;padding:20px;margin-bottom:12px}
+.faq-item h4{font-size:16px;margin-bottom:8px}
+.faq-item p{font-size:14px;color:#4B5563}
+.footer{background:#0A1931;color:white;padding:50px 0 20px;margin-top:40px}
+.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:32px;margin-bottom:30px}
+.footer a{color:#9CA3AF;text-decoration:none;font-size:14px}
+.footer a:hover{color:white}
+.footer h4{color:white;margin-bottom:14px;font-size:16px}
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:1000;overflow-y:auto;padding:20px}
+.modal.active{display:flex;align-items:flex-start;justify-content:center;padding-top:40px}
+.modal-content{background:white;border-radius:20px;max-width:900px;width:100%;overflow:hidden;max-height:90vh;overflow-y:auto}
+.modal-header{position:relative;height:300px}
+.modal-header img{width:100%;height:100%;object-fit:cover}
+.modal-header .close{position:absolute;top:16px;right:16px;background:rgba(0,0,0,0.6);color:white;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:20px;border:none}
+.modal-body{padding:28px}
+.modal-body h2{font-size:28px;margin-bottom:12px}
+.modal-meta{display:flex;gap:16px;margin-bottom:20px;flex-wrap:wrap}
+.meta-item{background:#F3F4F6;padding:8px 14px;border-radius:999px;font-size:13px;font-weight:600}
+.tabs{display:flex;gap:8px;margin-bottom:24px;overflow-x:auto;border-bottom:1px solid #E5E7EB;padding-bottom:12px}
+.tab{padding:8px 16px;border-radius:999px;font-size:14px;font-weight:600;cursor:pointer;white-space:nowrap;background:#F3F4F6;color:#4B5563;border:none}
+.tab.active{background:#FF6B00;color:white}
+.tab-content{display:none}
+.tab-content.active{display:block}
+.ingredients-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:16px 0}
+.ing-item{display:flex;gap:10px;align-items:flex-start;font-size:14px}
+.ing-item span{color:#16A34A;font-weight:700}
+.chat-box{background:#F9FAFB;border:1px solid #E5E7EB;border-radius:16px;padding:20px;margin-top:20px}
+.chat-row{display:flex;gap:12px;margin-bottom:12px}
+.chat-row .avatar{width:36px;height:36px;border-radius:50%;background:#FF6B00;color:white;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px}
+.chat-msg{background:white;border:1px solid #E5E7EB;border-radius:12px;padding:12px;font-size:14px;flex:1}
+.action-bar{display:flex;gap:12px;margin-top:24px;flex-wrap:wrap}
+.action-bar a{flex:1;min-width:140px;padding:14px;border-radius:12px;text-align:center;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.call-btn{background:#0A1931;color:white}
+.wa-btn{background:#25D366;color:white}
+.whatsapp-float{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;box-shadow:0 8px 24px rgba(37,211,102,0.4);z-index:999;text-decoration:none}
+.mobile-bar{display:none;position:fixed;bottom:0;left:0;right:0;background:white;border-top:1px solid #E5E7EB;padding:12px 16px;z-index:998;gap:12px}
+.mobile-bar a{flex:1;padding:12px;border-radius:999px;text-align:center;font-weight:700;text-decoration:none}
+@media(max-width:768px){.hero h1{font-size:38px}.grid{grid-template-columns:1fr}.modal-header{height:200px}.mobile-bar{display:flex}.whatsapp-float{bottom:80px}}
+</style>
+</head>
+<body>
+<header class="header">
+<div class="container header-flex">
+<div class="logo">SMVDK <span>TRAVELS</span></div>
+<a href="tel:+918493814143" class="phone-btn">📞 8493814143</a>
+</div>
+</header>
+
+<section class="hero">
+<div class="container">
+<div class="badge">🏆 NORTH INDIA'S MOST TRUSTED TRAVEL PARTNER</div>
+<h1>Experience the Magic<br><span class="gold">of North India</span></h1>
+<p>From the spiritual heights of Vaishno Devi to the majestic peaks of Ladakh. Hand-picked stays, dependable cabs, and clear pricing.</p>
+<p class="hero-sub">SMVDK Travels - 10+ Years Experience, 5000+ Happy Travellers, 15+ Destinations, 24/7 Support - Railway Road, Katra, J&K</p>
+</div>
+</section>
+
+<section class="flagship">
+<div class="container">
+<h2>🏆 Ultimate 14-Day Northern India Circuit</h2>
+<p>An epic overland journey covering Katra, Kashmir, Ladakh, Himachal, and traditional temples. Experience the ultimate grand circuit of the North.</p>
+<div class="timeline">
+<div class="timeline-day active"><div class="day-num">Day 1</div><div class="day-place">Jammu Arrival</div></div>
+<div class="timeline-day"><div class="day-num">Day 2</div><div class="day-place">Shiv Khori 7%</div></div>
+<div class="timeline-day"><div class="day-num">Day 3</div><div class="day-place">Patnitop</div></div>
+<div class="timeline-day"><div class="day-num">Day 4</div><div class="day-place">Srinagar</div></div>
+<div class="timeline-day"><div class="day-num">Day 5</div><div class="day-place">Gulmarg</div></div>
+<div class="timeline-day"><div class="day-num">Day 6</div><div class="day-place">Pahalgam</div></div>
+<div class="timeline-day"><div class="day-num">Day 7</div><div class="day-place">Sonamarg</div></div>
+<div class="timeline-day"><div class="day-num">Day 8</div><div class="day-place">Kargil</div></div>
+<div class="timeline-day"><div class="day-num">Day 9</div><div class="day-place">Leh</div></div>
+<div class="timeline-day"><div class="day-num">Day 10</div><div class="day-place">Pangong</div></div>
+<div class="timeline-day"><div class="day-num">Day 11</div><div class="day-place">Manali</div></div>
+<div class="timeline-day"><div class="day-num">Day 12</div><div class="day-place">Shimla</div></div>
+<div class="timeline-day"><div class="day-num">Day 13</div><div class="day-place">Dharamshala</div></div>
+<div class="timeline-day"><div class="day-num">Day 14</div><div class="day-place">Delhi Departure</div></div>
+</div>
+</div>
+</section>
+
+<section class="vibe">
+<div class="container">
+<h2 class="section-title">💼 Find Your Perfect Vacation</h2>
+<p class="section-sub">Choose your vibe - Kashmir, Himachal, Vaishno Devi, Ladakh, Rajasthan, Uttarakhand</p>
+<div class="grid" id="packagesGrid">
+<!-- Packages injected by JS -->
+</div>
+</div>
+</section>
+
+<div class="container">
+<div class="portals">
+<div class="portal-card train">
+<div style="font-size:36px">🚂</div>
+<h3>Train Booking</h3>
+<p style="font-size:14px;color:#4B5563;margin:8px 0 16px">Jammu Tawi, Shri Mata Vaishno Devi Katra Station, IRCTC Authorized. Tatkal, General, AC, Sleeper.</p>
+<a href="https://wa.me/918493814143?text=Jai%20Mata%20Di%20SMVDK%20Travels!%20Mujhe%20Train%20Booking%20karni%20hai" target="_blank" style="background:#2563EB;color:white;padding:12px 20px;border-radius:999px;font-weight:700;text-decoration:none;display:inline-block">Book Train Now →</a>
+</div>
+<div class="portal-card bus">
+<div style="font-size:36px">🚌</div>
+<h3>Bus Booking</h3>
+<p style="font-size:14px;color:#4B5563;margin:8px 0 16px">Katra to Delhi, Jammu, Srinagar, Manali Luxury & Volvo buses. AC, Non-AC, Sleeper.</p>
+<a href="https://wa.me/918493814143?text=Jai%20Mata%20Di%20SMVDK%20Travels!%20Mujhe%20Bus%20Booking%20karni%20hai" target="_blank" style="background:#16A34A;color:white;padding:12px 20px;border-radius:999px;font-weight:700;text-decoration:none;display:inline-block">Book Bus Now →</a>
+</div>
+<div class="portal-card cab">
+<div style="font-size:36px">🚕</div>
+<h3>Cab Booking - Jammu to Katra Expressway</h3>
+<p style="font-size:14px;color:#4B5563;margin:8px 0 16px">NH-44 Expressway Route, Toyota Crysta Premium SUV, Tempo Traveller Luxury, Etios Budget Sedan.</p>
+<a href="https://wa.me/918493814143?text=Jai%20Mata%20Di%20SMVDK%20Travels!%20Mujhe%20Cab%20Booking%20karni%20hai" target="_blank" style="background:#FF6B00;color:white;padding:12px 20px;border-radius:999px;font-weight:700;text-decoration:none;display:inline-block">Book Cab Now →</a>
+</div>
+</div>
+</div>
+
+<section class="top-dest">
+<div class="container">
+<h2 class="section-title">TOP DESTINATIONS</h2>
+<div class="dest-grid">
+<div class="dest-card"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400"><div class="dest-overlay"></div><div class="dest-name">Ladakh - Land of high passes</div></div>
+<div class="dest-card"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400"><div class="dest-overlay"></div><div class="dest-name">Kashmir - Paradise on Earth</div></div>
+<div class="dest-card"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400"><div class="dest-overlay"></div><div class="dest-name">Vaishno Devi - Trikuta Mountains</div></div>
+<div class="dest-card"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400"><div class="dest-overlay"></div><div class="dest-name">Himachal - Snow peaks</div></div>
+<div class="dest-card"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400"><div class="dest-overlay"></div><div class="dest-name">Rajasthan - Royal heritage</div></div>
+<div class="dest-card"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400"><div class="dest-overlay"></div><div class="dest-name">Uttarakhand - Land of Gods</div></div>
+<div class="dest-card"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400"><div class="dest-overlay"></div><div class="dest-name">Delhi - Capital Culture</div></div>
+<div class="dest-card"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400"><div class="dest-overlay"></div><div class="dest-name">Vrindavan - Krishna Land</div></div>
+</div>
+</div>
+</section>
+
+<section class="activities">
+<div class="container">
+<h2 class="section-title">⚡ Trending Activities</h2>
+<div class="act-grid">
+<div class="act-card"><div class="act-icon">🚵</div><h4>Biking</h4><p>6 Trips</p></div>
+<div class="act-card"><div class="act-icon">🛶</div><h4>Boating</h4><p>3 Trips</p></div>
+<div class="act-card"><div class="act-icon">⛺</div><h4>Camping</h4><p>10 Trips</p></div>
+<div class="act-card"><div class="act-icon">🌊</div><h4>River Rafting</h4><p>5 Trips</p></div>
+<div class="act-card"><div class="act-icon">🐎</div><h4>Horse Riding</h4><p>8 Trips</p></div>
+<div class="act-card"><div class="act-icon">🪂</div><h4>Paragliding</h4><p>12 Trips</p></div>
+</div>
+</div>
+</section>
+
+<section class="why">
+<div class="container">
+<h2 class="section-title">The Way We Work</h2>
+<div class="why-grid">
+<div class="why-card"><div class="icon">💰</div><h3>Value-first pricing</h3><p style="font-size:14px;color:#6B7280;margin-top:8px">Transparent quotes — no surprise add-ons at checkout.</p></div>
+<div class="why-card"><div class="icon">🤝</div><h3>Trusted on the ground</h3><p style="font-size:14px;color:#6B7280;margin-top:8px">Drivers and hotel partners we've worked with for years.</p></div>
+<div class="why-card"><div class="icon">🏨</div><h3>Comfortable stays</h3><p style="font-size:14px;color:#6B7280;margin-top:8px">Clean rooms in good locations — matched to your budget.</p></div>
+<div class="why-card"><div class="icon">🌅</div><h3>Support when you need it</h3><p style="font-size:14px;color:#6B7280;margin-top:8px">Reach us on call or WhatsApp throughout your trip.</p></div>
+</div>
+<div style="display:flex;justify-content:center;gap:32px;margin-top:40px;flex-wrap:wrap;text-align:center">
+<div><div style="font-size:32px;font-weight:800">10+</div><div style="font-size:14px;color:#6B7280">Years Experience</div></div>
+<div><div style="font-size:32px;font-weight:800">5k+</div><div style="font-size:14px;color:#6B7280">Happy Travellers</div></div>
+<div><div style="font-size:32px;font-weight:800">15+</div><div style="font-size:14px;color:#6B7280">Destinations</div></div>
+<div><div style="font-size:32px;font-weight:800">24/7</div><div style="font-size:14px;color:#6B7280">Support</div></div>
+</div>
+</div>
+</section>
+
+<section class="faq">
+<div class="container">
+<h2 class="section-title">Got Questions?</h2>
+<div style="max-width:800px;margin:0 auto">
+<div class="faq-item"><h4>How do I book a trip?</h4><p>Simply contact us via WhatsApp or Phone 8493814143 with your desired destination and dates. We will provide a fully customized itinerary and pricing.</p></div>
+<div class="faq-item"><h4>Are flights included in the packages?</h4><p>Our standard packages cover accommodation, private transport, and sightseeing. Flights can be arranged upon special request.</p></div>
+<div class="faq-item"><h4>Is Vaishno Devi Yatra support provided?</h4><p>Yes, we provide end-to-end support for Vaishno Devi including Katra hotel stays, helicopter bookings, and VIP Darshan assistance.</p></div>
+<div class="faq-item"><h4>Do you offer 24/7 support during the trip?</h4><p>Absolutely. You will have a dedicated local coordinator available via WhatsApp or Call 24/7 throughout your entire journey. Call 8493814143</p></div>
+</div>
+</div>
+</section>
+
+<footer class="footer">
+<div class="container">
+<div class="footer-grid">
+<div><h4>SMVDK TRAVELS</h4><p>Shri Mata Vaishno Devi Katra Travels<br>Your Trusted Tour & Travels in Katra<br><br>📍 Railway Road, Katra, J&K<br>📞 +91 8493814143<br>✉️ smvdktravels@gmail.com</p></div>
+<div><h4>Tour Packages</h4><p><a href="#">6-Day Kashmir Tour</a><br><a href="#">Himachal Tour</a><br><a href="#">Vaishno Devi Tour</a><br><a href="#">Ladakh Adventure</a><br><a href="#">Rajasthan Tour</a><br><a href="#">Uttarakhand Tour</a><br><a href="#">Delhi Tour</a><br><a href="#">14-Day Circuit</a></p></div>
+<div><h4>Local Katra Tours</h4><p><a href="#">Shivkhori Dham</a><br><a href="#">Patnitop Nathatop</a><br><a href="#">Sanasar Mansar</a><br><a href="#">Mansar Lake</a><br><a href="#">Jammu Local</a></p></div>
+<div><h4>Services</h4><p><a href="#">Train Booking</a><br><a href="#">Bus Booking</a><br><a href="#">Cab Booking - Jammu to Katra</a><br><a href="#">Toyota Crysta Premium SUV</a><br><a href="#">Tempo Traveller Luxury</a><br><a href="#">Helicopter Booking</a></p></div>
+</div>
+<div style="border-top:1px solid #1F2937;padding-top:20px;text-align:center;color:#6B7280;font-size:13px">© 2026 SMVDK Travels - Katra Travel Agency. 10+ Years, 5000+ Happy Travellers. Made with ❤️ in Katra. Call 8493814143</div>
+</div>
+</footer>
+
+<a href="https://wa.me/918493814143?text=Jai%20Mata%20Di%20SMVDK%20Travels!" class="whatsapp-float" target="_blank">💬</a>
+<div class="mobile-bar"><a href="tel:+918493814143" class="call-bar">📞 Call</a><a href="https://wa.me/918493814143" target="_blank" class="wa-bar">💬 WhatsApp</a></div>
+
+<!-- MODAL FOR PACKAGE DETAILS -->
+<div id="packageModal" class="modal">
+<div class="modal-content">
+<div class="modal-header">
+<img id="modalImg" src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800" alt="">
+<button class="close" onclick="closeModal()">×</button>
+</div>
+<div class="modal-body">
+<h2 id="modalTitle">Package Title</h2>
+<div class="modal-meta">
+<span class="meta-item" id="modalDays">5N/6D</span>
+<span class="meta-item">✅ Hotel Included</span>
+<span class="meta-item">🚕 Cab Included</span>
+<span class="meta-item">🍽️ Breakfast</span>
+</div>
+
+<div class="tabs">
+<button class="tab active" onclick="showTab('overview')">Overview</button>
+<button class="tab" onclick="showTab('itinerary')">Day-wise Itinerary</button>
+<button class="tab" onclick="showTab('ingredients')">Ingredients / Inclusions</button>
+<button class="tab" onclick="showTab('images')">Images</button>
+<button class="tab" onclick="showTab('chat')">Chat & Support</button>
+</div>
+
+<div id="tab-overview" class="tab-content active">
+<p id="modalDesc" style="font-size:15px;color:#374151;line-height:1.7">Description here</p>
+<div style="margin-top:20px;display:flex;gap:12px;align-items:center">
+<span style="font-size:28px;font-weight:800;color:#FF6B00" id="modalPrice">₹18,500</span>
+<span style="color:#6B7280;font-size:14px">per person onwards</span>
+</div>
+</div>
+
+<div id="tab-itinerary" class="tab-content">
+<div id="modalItinerary" style="font-size:14px;line-height:1.8"></div>
+</div>
+
+<div id="tab-ingredients" class="tab-content">
+<h4 style="margin-bottom:12px">✅ Inclusions - Package Ingredients:</h4>
+<div class="ingredients-grid" id="modalInclusions"></div>
+<h4 style="margin:16px 0 12px">❌ Exclusions:</h4>
+<div class="ingredients-grid" id="modalExclusions"></div>
+</div>
+
+<div id="tab-images" class="tab-content">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px" id="modalImages"></div>
+</div>
+
+<div id="tab-chat" class="tab-content">
+<div class="chat-box">
+<h4 style="margin-bottom:16px">💬 Chat with SMVDK Travels - 8493814143</h4>
+<div class="chat-row"><div class="avatar">S</div><div class="chat-msg">Jai Mata Di! 🙏 SMVDK Travels me aapka swagat hai. Kaunsa package chahiye aapko?</div></div>
+<div class="chat-row"><div class="avatar">U</div><div class="chat-msg">Mujhe <span id="chatPackageName">Kashmir Tour</span> ke baare me details chahiye.</div></div>
+<div class="chat-row"><div class="avatar">S</div><div class="chat-msg">Bilkul! Ye package me Hotel, Cab, Breakfast, Sightseeing included hai. Aapka travel date kya hai? Main best price dunga. Aap direct call bhi kar sakte hain 8493814143 pe.</div></div>
+</div>
+<p style="font-size:13px;color:#6B7280;margin-top:12px">💡 Aapka message direct WhatsApp pe jayega SMVDK Travels ke number 8493814143 pe.</p>
+</div>
+
+<div class="action-bar">
+<a href="tel:+918493814143" class="call-btn">📞 Call 8493814143</a>
+<a href="#" id="waLink" target="_blank" class="wa-btn">💬 WhatsApp Chat - Book Now</a>
+</div>
+</div>
+</div>
+</div>
+
+<script>
+const packages = [
+{
+id:1,
+title:"6-Day Majestic Kashmir Tour Package",
+days:"5 nights / 6 days",
+price:"₹18,500",
+oldPrice:"₹24,000",
+desc:"Experience the breathtaking beauty of Kashmir with our premium 6-day tour starting from Katra. From serene Shikara rides on Dal Lake and majestic gondola rides in Gulmarg to the spectacular valleys of Sonamarg and Pahalgam, this is a fully sorted journey of a lifetime.",
+img:"https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
+itinerary:"<b>Day 1:</b> Jammu/Katra to Srinagar - Dal Lake, Shikara Ride, Houseboat Stay<br><b>Day 2:</b> Srinagar - Mughal Gardens, Shankaracharya Temple<br><b>Day 3:</b> Srinagar to Gulmarg - Gondola Ride, Snow Activities<br><b>Day 4:</b> Gulmarg to Pahalgam - Betaab Valley, Aru Valley<br><b>Day 5:</b> Pahalgam to Sonamarg - Thajiwas Glacier<br><b>Day 6:</b> Sonamarg to Jammu/Katra Drop",
+inclusions:["✅ 5 Nights Hotel (3 Star)","✅ Daily Breakfast & Dinner","✅ Private Cab - Toyota Etios / Innova","✅ Shikara Ride on Dal Lake","✅ Gulmarg Gondola Tickets","✅ All Toll & Parking","✅ 24/7 Support - 8493814143"],
+exclusions:["❌ Flights / Train Tickets","❌ Lunch","❌ Pony Ride, Personal Expenses","❌ GST 5% Extra"],
+images:["https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400","https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400","https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400"]
+},
+{
+id:2,
+title:"Himachal Tour - Shimla Manali",
+days:"6 nights / 7 days",
+price:"₹15,000",
+oldPrice:"₹20,000",
+desc:"A refreshing journey through the pristine hill stations of Himachal Pradesh. From the bustling mall roads of Shimla to the adventurous valleys of Manali.",
+img:"https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
+itinerary:"<b>Day 1:</b> Katra to Shimla<br><b>Day 2:</b> Shimla - Kufri, Mall Road<br><b>Day 3:</b> Shimla to Manali<br><b>Day 4:</b> Manali - Solang Valley, Atal Tunnel<br><b>Day 5:</b> Manali - Rohtang Pass (if open)<br><b>Day 6:</b> Manali to Dharamshala<br><b>Day 7:</b> Dharamshala to Katra/Jammu Drop",
+inclusions:["✅ 6 Nights Hotel","✅ Breakfast & Dinner","✅ Private Cab","✅ Shimla - Manali - Dharamshala Sightseeing","✅ All Taxes"],
+exclusions:["❌ Rohtang Permit Extra","❌ Adventure Activities","❌ Flights"],
+images:["https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400","https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400"]
+},
+{
+id:3,
+title:"Vaishno Devi Tour - Divine Pilgrimage",
+days:"3 nights / 4 days",
+price:"₹8,500",
+oldPrice:"₹12,000",
+desc:"A divine pilgrimage to the holy shrine of Mata Vaishno Devi. Enjoy a seamless spiritual journey with completely sorted logistics and comfortable stays.",
+img:"https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
+itinerary:"<b>Day 1:</b> Jammu to Katra - Checkin Hotel<br><b>Day 2:</b> Katra to Bhawan - Vaishno Devi Darshan - Return to Katra<br><b>Day 3:</b> Katra Local - Banganga, Charan Paduka, Ardhkuwari<br><b>Day 4:</b> Katra to Jammu Drop",
+inclusions:["✅ 3 Nights Hotel in Katra","✅ Breakfast & Dinner","✅ Jammu to Katra Cab","✅ Yatra Slip Assistance","✅ Helicopter Booking Assistance"],
+exclusions:["❌ Pony, Palki Charges","❌ VIP Darshan Tickets"],
+images:["https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400"]
+},
+{
+id:4,
+title:"Rajasthan Tour - Royal Heritage",
+days:"7 nights / 8 days",
+price:"₹18,000",
+oldPrice:"₹25,000",
+desc:"Immerse yourself in the royal heritage of Rajasthan. Explore magnificent forts, opulent palaces, and the golden sand dunes of the Thar Desert.",
+img:"https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
+itinerary:"<b>Day 1-2:</b> Jaipur - Amer Fort, Hawa Mahal<br><b>Day 3-4:</b> Jodhpur - Mehrangarh Fort<br><b>Day 5-6:</b> Udaipur - Lake Palace<br><b>Day 7:</b> Jaisalmer - Desert Safari<br><b>Day 8:</b> Departure",
+inclusions:["✅ 7 Nights Heritage Hotels","✅ Breakfast","✅ Private Cab","✅ Desert Safari with Camel Ride"],
+exclusions:["❌ Monument Entry Fees","❌ Flights"],
+images:["https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400"]
+},
+{
+id:5,
+title:"Delhi Tour - Capital Culture",
+days:"2 nights / 3 days",
+price:"₹6,000",
+oldPrice:"₹9,000",
+desc:"A quick getaway exploring the historical monuments and bustling culture of India's capital.",
+img:"https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
+itinerary:"<b>Day 1:</b> Arrival Delhi - Red Fort, Jama Masjid<br><b>Day 2:</b> Delhi - India Gate, Qutub Minar, Lotus Temple<br><b>Day 3:</b> Delhi Departure",
+inclusions:["✅ 2 Nights Hotel","✅ Breakfast","✅ Delhi Sightseeing Cab"],
+exclusions:["❌ Entry Tickets","❌ Flights"],
+images:["https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400"]
+},
+{
+id:6,
+title:"Ladakh Adventure - Land of High Passes",
+days:"7 nights / 8 days",
+price:"₹25,000",
+oldPrice:"₹35,000",
+desc:"Explore the land of high passes. Experience the unique culture, stunning monasteries, and high-altitude lakes of Ladakh.",
+img:"https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
+itinerary:"<b>Day 1:</b> Leh Arrival<br><b>Day 2:</b> Leh Local - Shanti Stupa, Leh Palace<br><b>Day 3:</b> Leh to Nubra Valley via Khardungla<br><b>Day 4:</b> Nubra to Pangong Lake<br><b>Day 5:</b> Pangong to Leh<br><b>Day 6:</b> Leh to Tso Moriri<br><b>Day 7:</b> Tso Moriri to Leh<br><b>Day 8:</b> Departure",
+inclusions:["✅ 7 Nights Hotel/Camp","✅ Breakfast & Dinner","✅ Inner Line Permits","✅ Bike/Cab - As per choice"],
+exclusions:["❌ Flights to Leh","❌ Oxygen Cylinder"],
+images:["https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400"]
+},
+{
+id:7,
+title:"Uttarakhand Divine Hills",
+days:"5 nights / 6 days",
+price:"₹14,000",
+oldPrice:"₹18,000",
+desc:"A journey through the 'Land of Gods'. Visit Rishikesh, Mussoorie, and the beautiful hills of Kumaon.",
+img:"https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
+itinerary:"<b>Day 1:</b> Delhi to Rishikesh<br><b>Day 2:</b> Rishikesh - River Rafting, Laxman Jhula<br><b>Day 3:</b> Rishikesh to Mussoorie<br><b>Day 4:</b> Mussoorie Sightseeing<br><b>Day 5:</b> Mussoorie to Nainital<br><b>Day 6:</b> Nainital to Delhi",
+inclusions:["✅ 5 Nights Hotel","✅ Breakfast & Dinner","✅ Rafting Included","✅ Cab"],
+exclusions:["❌ Flights"],
+images:["https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400"]
+},
+{
+id:8,
+title:"Braj & Taj Heritage - Mathura Vrindavan Agra",
+days:"3 nights / 4 days",
+price:"₹9,500",
+oldPrice:"₹13,000",
+desc:"Visit the holy land of Lord Krishna and the world-famous Taj Mahal in Agra.",
+img:"https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
+itinerary:"<b>Day 1:</b> Delhi to Mathura Vrindavan<br><b>Day 2:</b> Vrindavan to Agra<br><b>Day 3:</b> Agra - Taj Mahal, Agra Fort<br><b>Day 4:</b> Agra to Delhi",
+inclusions:["✅ 3 Nights Hotel","✅ Breakfast","✅ Mathura Vrindavan Agra Cab","✅ Taj Mahal Entry"],
+exclusions:["❌ Guide Charges"],
+images:["https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400"]
+},
+{
+id:9,
+title:"14-Day Northern India Circuit - Epic Grand Circuit",
+days:"13 nights / 14 days",
+price:"₹45,000",
+oldPrice:"₹65,000",
+desc:"This epic circuit covers Jammu, Kashmir, Ladakh, and the religious shrines of Himachal Pradesh. A journey from the plains to the highest passes. Flagship Experience!",
+img:"https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
+itinerary:"<b>Day 1:</b> Jammu Arrival - Katra<br><b>Day 2:</b> Katra - Shiv Khori<br><b>Day 3:</b> Katra - Patnitop, Nathatop, Sanasar<br><b>Day 4-6:</b> Patnitop to Srinagar - Kashmir Valley<br><b>Day 7-8:</b> Srinagar to Kargil, Leh<br><b>Day 9-10:</b> Leh - Pangong, Nubra<br><b>Day 11:</b> Leh to Manali<br><b>Day 12:</b> Manali to Shimla<br><b>Day 13:</b> Shimla to Dharamshala<br><b>Day 14:</b> Dharamshala to Delhi Departure",
+inclusions:["✅ 13 Nights Hotels","✅ All Meals - Breakfast & Dinner","✅ Private Cab - Toyota Crysta / Tempo Traveller","✅ All Permits - Ladakh, Rohtang","✅ Shikara, Gondola, Desert Safari","✅ 24/7 Coordinator - 8493814143"],
+exclusions:["❌ Flights","❌ Adventure Activities Extra"],
+images:["https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400"]
+},
+{
+id:10,
+title:"Shivkhori Dham Tour - Holy Cave",
+days:"Day Trip from Katra",
+price:"₹1,800",
+oldPrice:"₹2,500",
+desc:"Early morning after breakfast, proceed for Shiv Khori – the Holy Cave abode of Lord Shiva situated at a distance of 70 Kms from Katra. 200m natural cave with 4ft Shivling. Visit Siar Baba waterfalls, Baba Dhansal, Nau Devis.",
+img:"https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
+itinerary:"<b>Morning:</b> Katra to Shivkhori (70KM, 3 Hours)<br><b>Afternoon:</b> Shivkhori Gufa Darshan - 200m cave, 4ft Shivling<br><b>Enroute:</b> Siar Baba Waterfalls, Baba Dhansal, Nau Devis<br><b>Evening:</b> Return to Katra",
+inclusions:["✅ Day Trip Cab - Sedan / Innova","✅ Driver Allowance","✅ All Toll & Parking"],
+exclusions:["❌ Food","❌ Pony"],
+images:["https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400"]
+},
+{
+id:11,
+title:"Patnitop - Nathatop - Sanasar - Mansar Circuit",
+days:"2 nights / 3 days",
+price:"₹3,790",
+oldPrice:"₹5,500",
+desc:"Patnitop is close to Katra, hill escape with Sanasar cup-shaped meadow surrounded by gigantic conifers, Nathatop famous tourist point, paragliding, boating.",
+img:"https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
+itinerary:"<b>Day 1:</b> Katra to Patnitop - Nathatop - Paragliding<br><b>Day 2:</b> Patnitop to Sanasar - Lake, Boating, Horse Riding<br><b>Day 3:</b> Sanasar to Mansar Lake - Return to Katra",
+inclusions:["✅ 2 Nights Hotel Patnitop","✅ Breakfast & Dinner","✅ Cab - Patnitop, Nathatop, Sanasar, Mansar","✅ Paragliding, Boating Assistance"],
+exclusions:["❌ Adventure Activities Charges Extra"],
+images:["https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400"]
+}
+];
+
+function renderPackages(){
+const grid=document.getElementById('packagesGrid');
+grid.innerHTML=packages.map(p=>`
+<div class="package-card" onclick="openModal(${p.id})">
+<div class="package-img">
+<img src="${p.img}" alt="${p.title}" loading="lazy">
+<div class="overlay"></div>
+<div class="badge-top">BOOK NOW</div>
+<div class="days">${p.days}</div>
+</div>
+<div class="package-content">
+<h3>${p.title}</h3>
+<p class="package-desc">${p.desc}</p>
+<div class="package-price">
+<span class="price-new">${p.price}</span>
+${p.oldPrice?`<span class="price-old">${p.oldPrice}</span>`:''}
+</div>
+<div class="btn-row">
+<button class="btn btn-outline" onclick="event.stopPropagation();openModal(${p.id})">View Details</button>
+<button class="btn btn-primary" onclick="event.stopPropagation();openModal(${p.id})">Book Now</button>
+</div>
+</div>
+</div>
+`).join('');
+}
+
+function openModal(id){
+const pkg=packages.find(p=>p.id===id);
+if(!pkg) return;
+document.getElementById('modalImg').src=pkg.img;
+document.getElementById('modalTitle').textContent=pkg.title;
+document.getElementById('modalDays').textContent=pkg.days;
+document.getElementById('modalDesc').textContent=pkg.desc;
+document.getElementById('modalPrice').textContent=pkg.price;
+document.getElementById('modalItinerary').innerHTML=pkg.itinerary;
+document.getElementById('chatPackageName').textContent=pkg.title;
+document.getElementById('modalInclusions').innerHTML=pkg.inclusions.map(i=>`<div class="ing-item"><span>•</span><div>${i}</div></div>`).join('');
+document.getElementById('modalExclusions').innerHTML=pkg.exclusions.map(i=>`<div class="ing-item"><span>•</span><div>${i}</div></div>`).join('');
+document.getElementById('modalImages').innerHTML=pkg.images.map(img=>`<img src="${img}" style="width:100%;height:160px;object-fit:cover;border-radius:12px">`).join('');
+const waText=encodeURIComponent(`Jai Mata Di SMVDK Travels! Mujhe ${pkg.title} (${pkg.days}) book karna hai. Price ${pkg.price}. Date: ____  Persons: ____`);
+document.getElementById('waLink').href=`https://wa.me/918493814143?text=${waText}`;
+document.getElementById('packageModal').classList.add('active');
+document.body.style.overflow='hidden';
+showTab('overview');
+}
+
+function closeModal(){
+document.getElementById('packageModal').classList.remove('active');
+document.body.style.overflow='';
+}
+
+function showTab(name){
+document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+document.querySelectorAll('.tab-content').forEach(c=>c.classList.remove('active'));
+event.target.classList.add('active');
+document.getElementById('tab-'+name).classList.add('active');
+}
+
+document.getElementById('packageModal').addEventListener('click',function(e){if(e.target===this) closeModal()});
+renderPackages();
+</script>
+</body>
+</html>
